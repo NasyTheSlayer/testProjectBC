@@ -5,6 +5,7 @@ import { PostgresModule } from './modules/postgres/postgres.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { UserModule } from './modules/user/user.module';
 import { TrainModule } from './modules/train/train.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { TrainModule } from './modules/train/train.module';
     AuthModule,
     UserModule,
     TrainModule,
+    AppController,
   ],
 })
 export class AppModule {}
