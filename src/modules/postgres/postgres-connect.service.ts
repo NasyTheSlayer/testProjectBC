@@ -15,7 +15,7 @@ const dataSource = new DataSource({
   database: databaseConfig.dbName,
   entities: ['dist/modules/*/entities/*.entity{.ts,.js}'],
   migrations: ['dist/migrations/*{.ts,.js}'],
-  synchronize: true,
+  synchronize: false,
 });
 
 export default dataSource;
