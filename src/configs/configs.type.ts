@@ -15,6 +15,7 @@ export type DatabaseConfig = {
   user: string;
   password: string;
   dbName: string;
+  dbSSL: string;
 };
 
 export type JWTConfig = {

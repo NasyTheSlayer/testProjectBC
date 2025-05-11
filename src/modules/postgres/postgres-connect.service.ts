@@ -13,9 +13,10 @@ const dataSource = new DataSource({
   username: databaseConfig.user,
   password: databaseConfig.password,
   database: databaseConfig.dbName,
+  ssl: databaseConfig.dbSSL === 'true' ? { rejectUnauthorized: false } : false,
   entities: ['dist/modules/*/entities/*.entity{.ts,.js}'],
   migrations: ['dist/migrations/*{.ts,.js}'],
-  synchronize: false,
+  synchronize: true,
 });
 
 export default dataSource;

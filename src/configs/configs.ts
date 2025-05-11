@@ -11,6 +11,7 @@ export default (): Config => ({
     user: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     dbName: process.env.DB_NAME,
+    dbSSL: process.env.DB_SSL,
   },
   jwt: {
     accessSecret: process.env.JWT_ACCESS_SECRET,
